@@ -1,0 +1,255 @@
+@font-face {
+	font-family: 'Poppins';
+	font-style:normal;
+	font-weight:normal;
+	src:url('../assets/Poppins-Regular.ttf');
+}
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: "Poppins";
+}
+li {
+	list-style: none;
+}
+#root {
+	width:100vw;
+	height:100vh;
+	background-image:linear-gradient(#d36363, #877df2);
+	display:grid;
+	place-items:center;
+}
+
+
+#main {
+	width: 25rem;
+	overflow-x: hidden;
+}
+
+#page-wrap {
+	display: flex;
+	width:calc(25rem * 3);
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	top: 0;
+	left:0;
+	transition: all ease 200ms;
+}
+
+#page-2 {	
+	width:25rem;
+	height:30rem;
+	background-color:#fff;
+	border-radius: 15px;
+	padding:2rem 1rem;
+}
+#page-2 .greet-msg-box p {
+
+	font-size: 1.2rem;
+}
+#question-box {
+	padding: 2em 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	height: 100%;
+}
+
+#question-box #question p {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+
+
+#question-box #next-btn{
+	width: 100%;
+	margin-top: auto;
+}
+
+#question-box #next-btn button {
+	width: 100%;
+	padding: 0.4em 1.2em;
+	font-size: 1em;
+	font-weight: 600;
+	border: none;
+	background-color: #907AE1;
+	border-radius: 3px;
+	transition: all 150ms ease;
+	cursor: pointer;
+
+}
+#question-box #next-btn button:hover {
+	background-color: #473d70;
+	color: #fff;
+}
+#question-box #options li {
+	display: flex;
+	gap: 6px;
+	cursor: pointer;
+	pointer-events: none;
+}
+#question-box #options input {
+	pointer-events: none;
+}
+
+#question-box #options div {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8em 0;
+    cursor: pointer
+}
+
+
+#page-3 {
+	width:25rem;
+	height:30rem;
+	background-color:#fff;
+	border-radius:15px;
+	padding:2rem 1rem;
+}
+
+#page-3 main {
+	padding: 10px 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+#page-3 main section {
+	padding: 10px;
+	display: grid;
+	place-items: center;
+}
+
+#page-3 main section:nth-child(1) p {
+	font-weight: 600;
+	color: darkgreen;
+}
+
+#page-3 main section:nth-child(2) p {
+	font-weight: 600;
+	color: darkred;	
+}
+
+#page-3 footer {
+	margin-top: 35px;
+}
+
+#page-3 main section div {
+	width: 100%;
+	height: 160px;	
+	border: 2px solid magenta;
+	margin-bottom: 20px;
+	display: grid;
+	border-radius: 15px;
+	place-items: center;
+	font-size: 4rem;
+}
+
+#page-3 header > p {
+	font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+#page-3 button {
+	width: 100%;
+	padding: .5em .2em;
+	background-color: #9F6FB4;
+	border-radius: 5px;
+	border:none;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 1em;
+	transition: all ease 200ms;
+}
+
+
+
+#page-1 {
+	width:25rem;
+	height:30rem;
+	background-color:#fff;
+	border-radius:15px;
+	display:flex;
+	flex-direction:column;
+	place-items:center;
+	padding:2rem 1rem;
+	gap: 2rem;
+	
+}
+
+#page-1 .logo img {
+	width:150px;
+	height:150px;
+}
+
+#page-1 .mgs p {
+	font-size:1.5rem;
+	text-align:center;
+	font-weight:600;
+}
+
+#page-1 .name-input {
+	width:100%;
+}
+
+#page-1 .name-input input {
+	width:100%;
+	padding:0.5em 1em;
+	border-radius: 5px;
+	border:2px solid #000;
+	font-size: 1em;
+	font-weight: 600;
+}
+#page-1 .start-btn {
+	width: 100%;
+}
+
+#page-1 .start-btn button {
+	width: 100%;
+	padding: .5em .2em;
+	background-color: #9F6FB4;
+	border-radius: 5px;
+	border:none;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 1em;
+	transition: all ease 200ms;
+}
+#page-1 .start-btn button:hover {
+	background-color: #5d3f6b;
+}
+
+
+@media only screen and (max-width:650px) {
+	#main {
+		width: 20rem;
+	}
+	#page-wrap {
+		width: calc(100% * 3);
+	}
+
+	#page-1 , #page-2 , #page-3 {
+		width: 20rem;
+	}
+	#question-box #options li {
+		font-size: 0.8rem;
+	}
+	#question-box #question p {
+		font-size: 1rem;
+	}
+}
+
+/*
+
+NEXT MAKE THIS WEBSITE RESPONSIVE
+
+*/
